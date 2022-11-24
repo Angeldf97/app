@@ -1,0 +1,40 @@
+<html>
+  
+  <body>
+<h1> {{email_user}} </h1>
+<h1> {{name}}</h1>
+ <a href = "/login">REGISTRO</a><br>  
+ <a href = "/entrada">ENTRADA</a><br>  
+ <a href = "/logout">SALIDA</a><br> 
+ <a href = "/umbral_historico">DEFINIR UMBRAL HISTORICO</a><br>
+ <div>
+ <form method = "POST" action = "./success_media">
+       <table>
+             <tr><td><input type = "submit" value = "MEDIA BBDD LOCAL"></td></tr>
+         </table>
+	 </form>
+</div>
+<div>
+<form method = "POST" action = "./beebotte">
+       <table>
+             <tr><td><input type = "submit" value = "MEDIA BBDD INTERNET (Beebotte)"></td></tr>
+         </table>
+	 </form>
+</div>
+<div>
+<form method = "POST" action = "./thingspeak">
+       <table>
+             <tr><td><input type = "submit" value = "MEDIA BBDD INTERNET (Thingspeak)"></td></tr>
+         </table>
+</form>
+</div>
+<div>
+<form method = "POST" action = "./graficas">
+       <table>
+             <tr><td><input type = "submit" value = "GRAFICAS EXTERNAS DE THINGSPEAK"></td></tr>
+         </table>
+</form>
+</div>
+
+  </body>
+</html>
